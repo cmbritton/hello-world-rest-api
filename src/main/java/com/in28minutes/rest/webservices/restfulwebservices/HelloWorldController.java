@@ -9,16 +9,16 @@ public class HelloWorldController {
 
 	@GetMapping(path = "/hello-world")
 	public String helloWorld() {
-		return "Hello World - update";
+		return "Hello World - v3";
 	}
 
 	@GetMapping(path = "/hello-world-bean")
 	public HelloWorldBean helloWorldBean() {
-		return new HelloWorldBean("Hello World - update");
+		return new HelloWorldBean("Hello World - v3");
 	}
 	
 	@GetMapping(path = "/hello-world/path-variable/{name}")
 	public HelloWorldBean helloWorldPathVariable(@PathVariable String name) {
-		return new HelloWorldBean(String.format("Hello World, %s -update", name));
+		return new HelloWorldBean(String.format("Hello World, %s - v3", name));
 	}
 }
