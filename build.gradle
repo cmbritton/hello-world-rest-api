@@ -59,13 +59,13 @@ dependencyManagement {
 }
 
 docker {
-    name 'cmbritton/hello-world-rest-api-code-pipeline'
+    name 'cmbritton/hello-world-rest-api'
     files 'build'
 }
 
 dockerRun {
-    name 'hello-world-rest-api-code-pipeline'
-    image 'cmbritton/currency-conversion-service-xray:latest'
+    name 'hello-world-rest-api'
+    image 'cmbritton/hello-world-rest-api:latest'
     ports '8100:8100'
     daemonize true
 }
