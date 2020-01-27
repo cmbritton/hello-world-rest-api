@@ -8,6 +8,8 @@ plugins {
     id 'com.palantir.docker-run' version '0.22.1'
 }
 
+// build trigger
+
 group = 'com.cbritton'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
