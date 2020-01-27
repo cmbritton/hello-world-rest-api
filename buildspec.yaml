@@ -14,8 +14,8 @@ phases:
     commands:
     - echo Build started on `date`
     - echo $IMAGE_URI
-    - grale build
-    - docker build --tag $IMAGE_URI .
+    - gradle build
+    - docker build --tag $IMAGE_URI build
   post_build:
     commands:
     - printenv
